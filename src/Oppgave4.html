@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uke4</title>
+  <!--Oppgave 4
+Endre oppgave 3 ved å legge ut en
+"pop-up/alert"-boks som skal inneholde teksten
+fra input-feltet.
+-->
+
+</head>
+<body>
+<label for="inne">navn</label>
+<input type="text" onchange="visNavn(this.value)" id="inne"/>
+<script type="application/javascript">
+  function visNavn(navn){
+    alert("navnet er "+ navn);
+    document.write("navnet er "+ navn);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uke3</title>
+</head>
+<body>
+<!-- Lag et input-felt i en HTML-side.
+Lag et JavaScript som leser dataene fra input-feltet
+når det er endringer i feltet (hendelsen "onChange") og som skriver disse dataene ut på en blank side med "document.write". Funksjonen som kalles ved "onChange" skal ta en inn-parameter,
+ som er verdien av input-feltet-->
+<label for="inne" > navn </label>
+<input  type="text" onchange="visNavn(this.value)" id="inne"/>
+<div id="navn">Navn er </div>
+<script type="application/javascript">
+    function visNavn(navnet){
+        alert("navnet er "+ navnet);
+        document.write("navnet er " + navnet);
+    }
+</script>
+</body>
+</html>

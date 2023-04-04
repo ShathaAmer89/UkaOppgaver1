@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uke5</title>
+
+</head>
+<body>
+<!--Utvid oppgave 4 med å skrive informasjonen fra
+input-feltet til "console.log".
+ Sjekk at dataene blir skrevet til loggen -->
+<label for="inne">navn</label>
+<input type="text" onchange="visNavn(this.value)" id="inne"/>
+<div id="navn">ut</div>
+<script type="application/javascript">
+  function visNavn(navn){
+    document.getElementById("navn").innerText=navn;
+    console.log(navn);
+  }
+</script>
+</body>
+</html>

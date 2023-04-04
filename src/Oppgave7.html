@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uke7</title>
+
+</head>
+<body>
+<!-- Utvid oppgave 4 ved å vise input i alert boks i store bokstaver.
+-->
+<label for="inne">Navnet er</label>
+<input onchange="visNavn(this.value)" type="text" id="inne" value=" "/>
+<script type="application/javascript">
+  function visNavn(navn){
+    document.write(navn.toUpperCase());
+    alert(navn.toUpperCase());
+  }
+</script>
+
+
+</body>
+</html>
